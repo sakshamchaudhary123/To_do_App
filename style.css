@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body, html{
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    background-color: #e8ebed;
+    display: flex;
+    flex-direction: column; /* flex-direction: column; is used to align the content vertically */
+    align-items: center;
+    justify-content: center;
+}
+
+#main-heading{
+    font-size: 60px;
+
+    color: #333333;
+    margin-bottom: 40px;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr auto;
+    gap: 10px;
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 10px 4px 8px rgba(0, 0, 0, 0.27);
+    /* margin-top: 10px; */
+}
+
+#todo-input , #todo-date{
+    font-size: 16px;
+    padding: 10px ;
+    border: 1px solid #6d6c6c;
+    border-radius: 5px;
+}
+
+.btn-delete{
+    background-color: rgb(104, 20, 20);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 15px 15px;
+    cursor: pointer;
+}
+
+.btn-add{
+    background-color: rgb(77, 174, 48);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+.btn-add:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+.todo-container{
+    margin-top: 20px;
+    width: 100%;
+    max-width: 600px;
+    background-color: white;
+    padding: 20px;
+}
+
+.todo-container span {
+    display: block;
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.todo-container .btn-delete {
+    background-color: #dc3545; 
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+    /* margin-top: 0 10px; */
+}
+
+.todo-container .btn-delete:hover {
+    background-color: #c82333; /* Darker red on hover */
+}
